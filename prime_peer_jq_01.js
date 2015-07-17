@@ -13,9 +13,10 @@ $(document).ready(function(){
 		rPerson[0] = nameGender() + " " + randomNameL;
 		rPerson[1] = randomNumber(1, 100);
 		rPerson[2] = randomNumber(1, 300);
+		rPerson[4] = $("#goForth");
 		
-		$("#outputPeople").children().remove(); $("#outputPeople1").children().remove(); $("#outputPeople2").children().remove(); $("#outputPeople3").children().remove();
-		$("#outputPeople").prepend('<p>Name: ' + rPerson[0] +'</p>'); $("#outputPeople1").prepend('<p>Age: ' + rPerson[1] +'</p>'); $("#outputPeople2").prepend('<p>Weight: ' + rPerson[2] +' pounds</p>'); $("#outputPeople3").prepend('<p>Gender: ' + rPerson[3] +'</p>');
+		$("#outputPeople").children().remove(); $("#outputPeople1").children().remove(); $("#outputPeople2").children().remove(); $("#outputPeople3").children().remove(); $("#goForth").children().remove();
+		$("#outputPeople").prepend('<p>Name: ' + rPerson[0] +'</p>'); $("#outputPeople1").prepend('<p>Age: ' + rPerson[1] +'</p>'); $("#outputPeople2").prepend('<p>Weight: ' + rPerson[2] +' pounds</p>'); $("#outputPeople3").prepend('<p>Gender: ' + rPerson[3] +'</p>');$("#goForth").prepend('<p>Now go forth with your bad self ' + rPerson[0] +'!</p>');
 		
 		
 	}); // ends randomize
